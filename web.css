@@ -4,13 +4,19 @@
     --warning-colour: #f00;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
+.centrada{
+    text-align: center;
+}
+
+.oculta {
+    position: absolute;
+    left: -9999px;
+}
+
+.radiobuttons {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.2em;
+    border: 1px solid var(--primary-colour);
 }
 
 a {
@@ -18,11 +24,25 @@ a {
     color: var(--primary-colour);
 }
 
-h1 {
-    text-align: center;
+fieldset {
+    display: inline-block;
+    width: 45%;
 }
 
 footer {
     text-align: center;
     padding-top: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
 }
