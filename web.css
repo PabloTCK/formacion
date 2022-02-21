@@ -1,0 +1,28 @@
+:root {
+    --primary-colour: #000;
+    --secondary-colour: #aaa;
+    --warning-colour: #f00;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-colour);
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding-top: 1em;
+}
