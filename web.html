@@ -1,0 +1,89 @@
+<head>
+    <title>Formación</title>
+    <link rel="stylesheet" href="web.css">
+    <meta name="keywords" content="prueba, cursos">
+    <meta name="description" content="Página para probar diferentes recursos de los cursos de formación">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="web.html"><strong>Título de la página</strong></a></li>
+                <li>Enlace uno</li>
+                <li>Enlace dos</li>
+                <li>Enlace tres</li>
+                <li>Enlace cuatro</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Título de la página</h1>
+        <article>
+            <h2>Título del primer artículo</h2>
+            <p>Esto es un párrafo en el que no me voy a entretener mucho, pero habrá que darle un poco de longitud para que ocupe algo de espacio en la pantalla. Una opción sería meterle un poco de <strong>lorem ipsum</strong>, claro...</p>
+            <aside>Esto es información adicional que añade información interesante pero no fundamental.</aside>
+            <p>Aquí continúa el artículo; en función del ancho de la pantalla seguirá a continuación del primero con el <em>aside</em> a un lado, o seguirá al <em>aside</em> en una sola columna. Habrá que meter diseño <em>responsive</em>.</p>
+            <p>Aquí sí, aquí meto lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+            <h2>Título del segundo artículo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+            <h2>Otro título</h2>
+            <p>Para comprobar que todo funciona, porque dos puntos siempre forman una línea recta y el tercero es el que empieza a demostrar si hay correlación o no.</p>
+        </article>
+        <hr/>
+        <form>
+            <fieldset>
+                <legend>Información personal</legend>
+                <div>
+                    <span class="oculta">Personal</span>
+                    <label for="nombre">Nombre: </label> <br>
+                    <input type="text" id="nombre" required autofocus>
+                </div>
+                <div>
+                    <label for="direccion">Dirección: </label> <br>
+                    <textarea id="direccion" required></textarea>
+                </div>
+                <div>
+                    <label for="telefono">Número de teléfono: </label> <br>
+                    <input type="tel" id="telefono" pattern="\d{4,}" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Información adicional</legend>
+                <div>
+                    <span class="oculta">Adicional</span>
+                    <label for="url">Página personal: </label> <br>
+                    <input type="url" id="url">
+                </div>
+                <!-- Nested fieldsets can cause odd screen reader behavior and should be avoided: https://webaim.org/techniques/forms/controls#radio -->
+                <div class="radiobuttons">
+                    <label for="mascotas">¿Tienes alguna mascota?</label>
+                    <input type="radio" name="mascotas" id="mascotas_si" onclick="mostrar()"> Sí
+                    <input type="radio" name="mascotas" id="mascotas_no" onclick="mostrar()"> No
+                </div>
+                <div class="oculta" id="mostrable" >
+                    <label for="numero">¿Cuántas mascotas tienes?</label> <br>
+                    <input type="number" min="0" step="1" id="numero"></input>
+                </div>
+            </fieldset>
+            <div class="centrada">
+                <button>Púlsame</button>
+            </div>
+        </form>
+        <ul>
+            <li id="id_uno" class="clase_uno">Clase e <em>id</em>: <strong>uno</strong></li>
+            <li id="id_dos" class="clase_dos">Clase e <em>id</em>: <strong>dos</strong></li>
+            <li id="id_tres" class="clase_tres">Clase e <em>id</em>: <strong>tres</strong></li>
+            <li id="id_cuatro" class="clase_cuatro">Clase e <em>id</em>: <strong>cuatro</strong></li>
+        </ul>
+    </main>
+    <footer>Esto es una prueba sin mucho que aportar; el pie de la página no necesita mucha información.</footer>
+    <script src="web.js"></script>
+</body>
