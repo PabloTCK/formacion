@@ -2,6 +2,7 @@
     --primary-colour: #000;
     --secondary-colour: #aaa;
     --warning-colour: #f00;
+    --test-colour: purple;
 }
 
 .centrada{
@@ -47,16 +48,32 @@ nav ul {
     padding-inline-start: 0;
 }
 
-/* Pruebas con selectores */
+/* PRUEBAS CON SELECTORES */
 
 .clase_uno {
-    color: var(--primary-colour);
+    color: var(--test-colour);
 }
 
-#id_uno{
+main ul li:first-child {
+    color: var(--warning-colour);
+}
+
+#id_dos{
     color: var(--secondary-colour);
 }
 
-main ul:first-child {
+main ul li:nth-child(even) {
     color: var(--warning-colour);
+}
+
+.clase_dos {
+    color: var(--primary-colour);
+}
+
+main ul li:nth-child(3) {
+    color: var(--test-colour);
+}
+
+.clase_cuatro {
+    color: var(--primary-colour);
 }
