@@ -39,6 +39,14 @@ h1 {
     text-align: center;
 }
 
+header {
+    padding: 0 1em;
+}
+
+main {
+    padding: 2em 6em;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -51,7 +59,7 @@ nav ul {
 /* PRUEBAS CON SELECTORES */
 
 .clase_uno {
-    color: var(--test-colour);
+    color: var(--primary-colour) !important;
 }
 
 main ul li:first-child {
@@ -71,7 +79,15 @@ main ul li:nth-child(even) {
 }
 
 main ul li:nth-child(3) {
+    color: var(--secondary-colour);
+}
+
+main ul li:nth-child(3) {
     color: var(--test-colour);
+}
+
+.clase_tres {
+    color: var(--primary-colour);
 }
 
 .clase_cuatro {

@@ -1,9 +1,19 @@
-let div = document.getElementById("mostrable");
-let toggle = document.getElementById("mascotas_si");
+let divMascotas = document.getElementById("mostrable");
+let mascotasSi = document.getElementById("mascotas_si");
+let mascotasNo = document.getElementById("mascotas_no");
+let textoMascotas = document.getElementById("numero");
 
 let mostrar = function() {
-    if (toggle.checked)
-        div.classList = "";
+    if (mascotasSi.checked)
+        divMascotas.classList = "";
     else
-        div.classList = "oculta";
+        divMascotas.classList = "oculta";
+};
+
+let esCero = function() {
+    if (parseInt(textoMascotas.value) === 0 || textoMascotas.value === "") {
+        alert("Eso es que en realidad no tienes mascotas.");
+        textoMascotas.value = "";
+        mascotasNo.click();
+    }
 };
