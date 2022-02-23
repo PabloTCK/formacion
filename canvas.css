@@ -1,0 +1,10 @@
+body {
+    padding: 4em 6em;
+    background-color: #000;
+}
+
+canvas {
+    background-color: #fff;
+    height: 100%;
+    width: 100%
+}
