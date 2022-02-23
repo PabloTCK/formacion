@@ -5,28 +5,42 @@
     --test-colour: purple;
 }
 
-.block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.block p{
+.block p {
     background-color: #77777780;
     display: block;
-    height: 3rem;
+    height: fit-content;
     text-align: center;
     width: 33%;
+}
+
+.block span {
+    background-color: #f3bb0293;
+    display: block;
 }
 
 .centrada{
     text-align: center;
 }
 
+.columnas {
+    column-count: 3;
+    /* column-count: 6; */
+    column-gap: 1rem;
+    padding: 0.5rem;
+}
+
+.inline p {
+    background-color: #5f9ea080;
+    display: inline;
+    height: fit-content;
+    text-align: center;
+    width: 33%;
+}
+
 .inlineblock p {
     background-color: #228b2280;
     display: inline-block;
-    height: 3rem;
+    height: fit-content;
     text-align: center;
     width: 33%;
 }
