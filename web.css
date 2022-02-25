@@ -5,6 +5,17 @@
     --test-colour: purple;
 }
 
+.absolute aside {
+    right: 1rem;
+    position: absolute;
+    top: 2rem;
+}
+
+.asideblock {
+    left: 36%;
+    position: absolute;
+}
+
 .block p {
     background-color: #77777780;
     display: block;
@@ -16,6 +27,7 @@
 .block span {
     background-color: #f3bb0293;
     display: block;
+    margin: 0.5rem;
 }
 
 .centrada{
@@ -29,12 +41,32 @@
     padding: 0.5rem;
 }
 
+.columnnowrap {
+    display: flex;
+    flex-direction: column-reverse;
+    /* WARNING: column-reverse can cause accesibility problems */
+    height: 12rem;
+    justify-content: space-between;
+}
+
+.columnwrap {
+    align-content: center;
+    display: flex;
+    flex-flow: wrap column;
+    height: 12rem;
+}
+
+.fixed aside {
+    right: 1rem;
+    position: fixed;
+    top: 2rem;
+}
+
 .inline p {
     background-color: #5f9ea080;
     display: inline;
     height: fit-content;
     text-align: center;
-    width: 33%;
 }
 
 .inlineblock p {
@@ -56,9 +88,53 @@
     border: 1px solid var(--primary-colour);
 }
 
+.relative aside {
+    right: 1rem;
+    position: relative;
+    top: 2rem;
+}
+
+.rownowrap {
+    display: flex;
+    flex-direction: row-reverse;
+    /* WARNING: row-reverse can cause accesibility problems */
+    justify-content: center;
+}
+
+.rowwrap {
+    align-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 12rem;
+}
+
+.sticky aside {
+    right: 1rem;
+    position: sticky;
+    top: 2rem;
+}
+
 a {
     text-decoration: none;
     color: var(--primary-colour);
+}
+
+article div div {
+    background-color: #f008;
+    font-size: 3rem;
+    height: 6rem;
+    width: 6rem;
+}
+
+aside {
+    background-color: #7ff3da9a;
+    width: fit-content;
+}
+
+code {
+    background-color: #967e5f80;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 fieldset {

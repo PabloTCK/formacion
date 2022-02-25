@@ -22,7 +22,7 @@
         <article class="block">
             <h2>Título del primer artículo</h2>
             <p>Esto es un párrafo en el que no me voy a entretener mucho, pero habrá que darle un poco de longitud para que ocupe algo de espacio en la pantalla. Una opción sería meterle un poco de <strong>lorem ipsum</strong>, claro...</p>
-            <aside>Esto es información adicional que añade información interesante pero no fundamental.</aside>
+            <aside class="asideblock">Esto es un <em>aside</em> que añade información interesante pero no fundamental.</aside>
             <p>Aquí continúa el artículo; en función del ancho de la pantalla seguirá a continuación del primero con el <em>aside</em> a un lado, o seguirá al <em>aside</em> en una sola columna. Habrá que meter diseño <em>responsive</em>.</p>
             <p>Aquí sí, aquí meto lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p><span>Aquí meto unos elementos <em>span</em> para comprobar el efecto de <code>display: block;</code> sobre elementos <em>inline</em>.</span><span> Voy a probar </span><span>a separar una frase</span><span> en varios elementos <em>span</em> a ver qué pasa.</span></p>
@@ -96,6 +96,68 @@
             <li id="id_tres" class="clase_tres">Clase e <em>id</em>: <strong>tres</strong></li>
             <li id="id_cuatro" class="clase_cuatro">Clase e <em>id</em>: <strong>cuatro</strong></li>
         </ul>
+        <article class="sticky">
+            <header>Soy un <em>header</em> dentro de un <em>article</em></header>
+            <h2>Pruebas con <code>position: sticky;</code></h2>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <aside>Hola, soy un <em>aside</em> con <code>position: sticky</code> y tengo información relacionada.</aside>
+            <footer>Soy el <em>footer</em>; eso quiere decir que estás al final del <em>article</em> en el que estoy.</footer>
+        </article>
+        <article class="relative">
+            <header>Soy un <em>header</em> dentro de un <em>article</em></header>
+            <h2>Pruebas con <code>position: relative;</code></h2>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <aside>Hola, soy un <em>aside</em> con <code>position: relative</code> y tengo información relacionada.</aside>
+            <footer>Soy el <em>footer</em>; eso quiere decir que estás al final del <em>article</em> en el que estoy.</footer>
+        </article>
+        <article class="fixed">
+            <header>Soy un <em>header</em> dentro de un <em>article</em></header>
+            <h2>Pruebas con <code>position: fixed;</code></h2>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <aside>Hola, soy un <em>aside</em> con <code>position: fixed</code> y tengo información relacionada.</aside>
+            <footer>Soy el <em>footer</em>; eso quiere decir que estás al final del <em>article</em> en el que estoy.</footer>
+        </article>
+        <article class="absolute">
+            <header>Soy un <em>header</em> dentro de un <em>article</em></header>
+            <h2>Pruebas con <code>position: absolute;</code></h2>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
+            <aside>Hola, soy un <em>aside</em> con <code>position: absolute</code> y tengo información relacionada.</aside>
+            <footer>Soy el <em>footer</em>; eso quiere decir que estás al final del <em>article</em> en el que estoy.</footer>
+        </article>
+        <article>
+            <div class="rownowrap">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="rowwrap">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="columnnowrap">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="columnwrap">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+        </article>
     </main>
     <footer>Esto es una prueba sin mucho que aportar; el pie de la página no necesita mucha información.</footer>
     <script src="web.js"></script>
