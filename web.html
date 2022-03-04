@@ -11,9 +11,10 @@
             <ul>
                 <li><a href="web.html"><strong>Título de la página</strong></a></li>
                 <li>Enlace uno</li>
-                <li>Enlace dos</li>
-                <li>Enlace tres</li>
-                <li>Enlace cuatro</li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="flex.html">Flexbox</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="position.html">Pruebas con <code>position</code></a></li>
             </ul>
         </nav>
     </header>
@@ -49,146 +50,12 @@
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </article>
-        <hr/>
-        <form>
-            <fieldset>
-                <legend>Información personal</legend>
-                <div>
-                    <span class="oculta">Personal</span>
-                    <label for="nombre">Nombre: </label> <br>
-                    <input type="text" id="nombre" required autofocus>
-                </div>
-                <div>
-                    <label for="direccion">Dirección: </label> <br>
-                    <textarea id="direccion" required></textarea>
-                </div>
-                <div>
-                    <label for="telefono">Número de teléfono: </label> <br>
-                    <input type="tel" id="telefono" pattern="\d{4,}" required>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Información adicional</legend>
-                <div>
-                    <span class="oculta">Adicional</span>
-                    <label for="url">Página personal: </label> <br>
-                    <input type="url" id="url">
-                </div>
-                <!-- Nested fieldsets can cause odd screen reader behavior and should be avoided: https://webaim.org/techniques/forms/controls#radio -->
-                <div class="radiobuttons">
-                    <label for="mascotas">¿Tienes alguna mascota?</label>
-                    <input type="radio" name="mascotas" id="mascotas_si" onclick="mostrar()"> Sí
-                    <input type="radio" name="mascotas" id="mascotas_no" onclick="mostrar()"> No
-                </div>
-                <div class="oculta" id="mostrable" >
-                    <label for="numero">¿Cuántas mascotas tienes?</label> <br>
-                    <input type="number" min="0" step="1" id="numero" onblur="esCero()"></input>
-                </div>
-            </fieldset>
-            <div class="centrada">
-                <button>Púlsame</button>
-            </div>
-        </form>
-        <hr>
         <ul>
             <li id="id_uno" class="clase_uno">Clase e <em>id</em>: <strong>uno</strong></li>
             <li id="id_dos" class="clase_dos">Clase e <em>id</em>: <strong>dos</strong></li>
             <li id="id_tres" class="clase_tres">Clase e <em>id</em>: <strong>tres</strong></li>
             <li id="id_cuatro" class="clase_cuatro">Clase e <em>id</em>: <strong>cuatro</strong></li>
         </ul>
-        <article class="sticky">
-            <header>Soy un <em>header</em> dentro de un <em>article</em></header>
-            <h2>Pruebas con <code>position: sticky;</code></h2>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <aside>Hola, soy un <em>aside</em> con <code>position: sticky</code> y tengo información relacionada.</aside>
-            <footer>Soy el <em>footer</em>; eso quiere decir que estás al final del <em>article</em> en el que estoy.</footer>
-        </article>
-        <article class="relative">
-            <header>Soy un <em>header</em> dentro de un <em>article</em></header>
-            <h2>Pruebas con <code>position: relative;</code></h2>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <aside>Hola, soy un <em>aside</em> con <code>position: relative</code> y tengo información relacionada.</aside>
-            <footer>Soy el <em>footer</em>; eso quiere decir que estás al final del <em>article</em> en el que estoy.</footer>
-        </article>
-        <article class="fixed">
-            <header>Soy un <em>header</em> dentro de un <em>article</em></header>
-            <h2>Pruebas con <code>position: fixed;</code></h2>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <aside>Hola, soy un <em>aside</em> con <code>position: fixed</code> y tengo información relacionada.</aside>
-            <footer>Soy el <em>footer</em>; eso quiere decir que estás al final del <em>article</em> en el que estoy.</footer>
-        </article>
-        <article class="absolute">
-            <header>Soy un <em>header</em> dentro de un <em>article</em></header>
-            <h2>Pruebas con <code>position: absolute;</code></h2>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <p>Soy un elemento <em>p</em> y contengo palabras: palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras, palabras.</p>
-            <aside>Hola, soy un <em>aside</em> con <code>position: absolute</code> y tengo información relacionada.</aside>
-            <footer>Soy el <em>footer</em>; eso quiere decir que estás al final del <em>article</em> en el que estoy.</footer>
-        </article>
-        <article class="flexbox">
-            <h2>Flexbox</h2>
-            <div class="rownowrap">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-            </div>
-            <div class="rowwrap">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-            </div>
-            <div class="columnnowrap">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-            </div>
-            <div class="columnwrap">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-            </div>
-        </article>
-        <article>
-            <h2>Grid</h2>
-            <div class="grid">
-                <div class="grid-uno">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                </div>
-                <div class="grid-dos">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                </div>
-                <div class="grid-tres">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                </div>
-                <div class="grid-cuatro">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                </div>
-            </div>
-        </article>
     </main>
     <footer>Esto es una prueba sin mucho que aportar; el pie de la página no necesita mucha información.</footer>
-    <script src="web.js"></script>
 </body>
