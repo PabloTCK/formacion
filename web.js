@@ -17,3 +17,9 @@ let esCero = function() {
         mascotasNo.click();
     }
 };
+
+
+function onClickClickable(numeroID) {
+    let div = document.getElementById(`click${numeroID}`)
+    div.classList.toggle("clickada");
+}

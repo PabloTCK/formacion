@@ -34,6 +34,19 @@
     text-align: center;
 }
 
+.clickable {
+    background-color: #00a0a080;
+    display: inline-block;
+    height: 5rem;
+    margin-block-end: 1rem;
+    margin-inline-end: 1rem;
+    width: 5rem;
+}
+
+.clickada {
+    background-color: #00a0a0;
+}
+
 .columnas {
     column-count: 3;
     /* column-count: 6; */
