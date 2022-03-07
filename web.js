@@ -1,7 +1,7 @@
-let divMascotas = document.getElementById("mostrable");
-let mascotasSi = document.getElementById("mascotas_si");
-let mascotasNo = document.getElementById("mascotas_no");
-let textoMascotas = document.getElementById("numero");
+const divMascotas = document.getElementById("mostrable");
+const mascotasSi = document.getElementById("mascotas_si");
+const mascotasNo = document.getElementById("mascotas_no");
+const textoMascotas = document.getElementById("numero");
 
 let mostrar = function() {
     if (mascotasSi.checked)
@@ -18,8 +18,17 @@ let esCero = function() {
     }
 };
 
+const texto = document.getElementsByClassName("textoTransform")[0];
 
 function onClickClickable(numeroID) {
     let div = document.getElementById(`click${numeroID}`)
     div.classList.toggle("clickada");
+    if (texto.value !== "") {
+        console.log("dentro del if de texto.value !== ''");
+        div.style.transform = `${texto.value}`;
+    }
+    if (!div.classList.contains("clickada")) {
+        console.log("dentro del if de quitar clase clickada");
+        div.style = "";
+    }
 }

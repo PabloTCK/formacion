@@ -179,6 +179,10 @@
     top: 2rem;
 }
 
+.textoTransform {
+    width: 80%;
+}
+
 a {
     text-decoration: none;
     color: var(--primary-colour);
