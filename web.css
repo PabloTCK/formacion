@@ -180,6 +180,8 @@
 }
 
 .textoTransform {
+    font-family: 'Courier New', Courier, monospace;
+    margin-block-end: 1rem;
     width: 80%;
 }
 
