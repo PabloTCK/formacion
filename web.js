@@ -24,11 +24,10 @@ function onClickClickable(numeroID) {
     let div = document.getElementById(`click${numeroID}`)
     div.classList.toggle("clickada");
     if (texto.value !== "") {
-        console.log("dentro del if de texto.value !== ''");
-        div.style.transform = `${texto.value}`;
+        div.style.transform = `"${texto.value};"`;
+        // div.style.transform = "scale(0.5)";
     }
     if (!div.classList.contains("clickada")) {
-        console.log("dentro del if de quitar clase clickada");
         div.style = "";
     }
 }
